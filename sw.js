@@ -1,4 +1,4 @@
-const CACHE_NAME = '3501-test-v4'; // 升級到 v4
+const CACHE_NAME = '3501-test-v5'; // 升級到 v5
 const ASSETS = [
   './',
   './index.html',
