@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3501 扶青行事曆測試</title>
+
+    <!-- 引入 PWA 身分證 -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- Android 狀態列主題顏色 -->
+    <meta name="theme-color" content="#005ea6">
+</head>
+<body>
+
+    <div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
+        <h1>國際扶輪3501地區</h1>
+        <h2>UNITE FOR GOOD 測試網頁</h2>
+        <p>如果看到這個畫面，代表網頁載入成功！</p>
+        <p>請嘗試使用三星瀏覽器將此頁「新增至主螢幕」。</p>
+    </div>
+
+    <!-- 註冊 Service Worker 核心程式 -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('SW 註冊成功:', reg.scope))
+                    .catch(err => console.log('SW 註冊失敗:', err));
+            });
+        }
+    </script>
+</body>
+</html>
