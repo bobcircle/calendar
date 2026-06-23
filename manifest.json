@@ -1,14 +1,22 @@
 {
   "name": "國際扶輪3501地區扶青地區年曆",
   "short_name": "3501扶青秩",
-  "description": "3501地區扶青行事曆測試",
+  "description": "3501地區扶青行事曆最新版 Web App",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#005ea6",
   "orientation": "portrait",
+  "id": "/calendar/",
+  "prefer_related_applications": false,
   "icons": [
+    {
+      "src": "./icon-512.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "./icon-512.png",
       "sizes": "512x512",
