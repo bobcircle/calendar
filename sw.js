@@ -1,9 +1,11 @@
-const CACHE_NAME = '3501-test-v3';
+maskable
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
   './icon-512.png'
+  'https://bobcircle.github.io/calendar/',
+  'https://bobcircle.github.io/calendar/index.html' // 確保絕對路徑也被快取
 ];
 
 self.addEventListener('install', (e) => {
